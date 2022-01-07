@@ -28,8 +28,60 @@
             <div class="month">
                 <i class="fa fa-angle-left fa-2x prev"></i>
                 <div class="date">
-                    <h1></h1>
+                    <h1 id="display_year"></h1>
+                    <div class="modal fade" id="modal_year" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <form>
+                                            <input type="text" class="form-control" id="year_num"
+                                                aria-describedby="titleHelp" placeholder="Enter Year"
+                                                onblur="year_form()">
+                                            <div id="div1"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 id="display_month"></h2>
+                    <div class="modal fade" id="modal_month" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-body">
+                                    <div class="container-fluid ">
+                                        <div class="row month_row">
+                                            <div class="col-md-4">
+                                                <li>January</li>
+                                                <li>February</li>
+                                                <li>March</li>
+                                                <li>April</li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li>May</li>
+                                                <li>June</li>
+                                                <li>July</li>
+                                                <li>August</li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li>September</li>
+                                                <li>October</li>
+                                                <li>November</li>
+                                                <li>December</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <p></p>
+
                 </div>
                 <i class="fa fa-angle-right fa-2x next"></i>
             </div>
@@ -55,23 +107,23 @@
         aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                              
+
                 <!-- Button onclick show this -->
                 <form>
-                <input type="text" class="form-control" id="event_title" aria-describedby="titleHelp"
-                    placeholder="Add title">
+                    <input type="text" class="form-control" id="event_title" aria-describedby="titleHelp"
+                        placeholder="Add title">
 
-                <input type="text" class="form-control" id="office_title" aria-describedby="titleHelp"
-                    placeholder="Out of office" value="Out Of Office">
+                    <input type="text" class="form-control" id="office_title" aria-describedby="titleHelp"
+                        placeholder="Out of office" value="Out Of Office">
 
-                <input type="text" class="form-control" id="task_title" aria-describedby="titleHelp"
-                    placeholder="Add title of the task">
+                    <input type="text" class="form-control" id="task_title" aria-describedby="titleHelp"
+                        placeholder="Add title of the task">
 
-                <input type="text" class="form-control" id="reminder_title" aria-describedby="titleHelp"
-                    placeholder="Add title (reminder)">
+                    <input type="text" class="form-control" id="reminder_title" aria-describedby="titleHelp"
+                        placeholder="Add title (reminder)">
 
-                <input type="text" class="form-control" id="appointment_title" aria-describedby="titleHelp"
-                    placeholder="Add title for the appointment">
+                    <input type="text" class="form-control" id="appointment_title" aria-describedby="titleHelp"
+                        placeholder="Add title for the appointment">
                 </form>
 
                 <!-- navtabs -->
@@ -290,20 +342,22 @@
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    
 
-   
+
+    <script type="text/JavaScript" src=" https://MomentJS.com/downloads/moment.js"></script>
     <script src="../js/jquery-ui-datepicker.min.js"></script>
     <script src="../js/script.js"></script>
+    <!-- <script src="../js/newscript.js"></script> -->
 </body>
 
 </html>
