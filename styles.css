@@ -12,7 +12,6 @@ html {
 .container {
   width: 100%;
   height: 100vh;
-  /* background-color: rgb(52, 52, 66); */
   background-color: rgb(57, 57, 71);
   color: lavender;
   display: flex;
@@ -23,10 +22,8 @@ html {
 .calendar {
   width: 500px;
   height: 600px;
-  /* background-color: rgb(53, 53, 83); */
   box-shadow: 1px 1px 15px #e935d1;
   border-radius: 15px;
-  /* background-image: url("../images/calendar_bg.png"); */
   background-image: url("../images/cal_bg2.png");
 }
 
@@ -80,7 +77,6 @@ html {
   flex-wrap: wrap;
   padding: 1px;
   margin-right: 20px;
-  /* background-color: honeydew; */
 }
 
 .days div {
@@ -108,12 +104,14 @@ html {
   border: 2px solid rgb(134, 121, 121);
   cursor: pointer;
 }
-#event_title, #office_title, #task_title, #reminder_title, #appointment_title
-{
+#event_title,
+#office_title,
+#task_title,
+#reminder_title,
+#appointment_title {
   font-size: 25px;
   margin-top: 15px;
 }
-
 
 #myTab .active {
   border: 2px solid rgb(174, 200, 230);
@@ -176,40 +174,59 @@ input.form-control:hover {
   margin-top: 5px;
   font-weight: bolder;
 }
-#office_content p
-{
+#office_content p {
   font-size: 18px;
 }
-#office_content span
-{
+#office_content span {
   margin-left: 20px;
 }
 
-.radio_office
-{
+.radio_office {
   font-size: 15px;
 }
 
-#task_description
-{
+#task_description {
   background-color: rgb(227, 230, 233);
   min-height: 80px;
   max-height: 120px;
 }
 
-#reminder
-{
+#reminder {
   font-size: 15px;
   margin-top: 5px;
 }
 
-#reminder_checkbox
-{
+#reminder_checkbox {
   font-size: 15px;
   margin-top: 5px;
 }
-#reminder_content
-{
+#reminder_content {
   font-size: 15px;
   margin-top: -10px;
+}
+
+.month_row li {
+  list-style-type: none;
+  border: 1px solid #e935d1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.month_row li:hover {
+  border: 1px solid #e935d1;
+  background-color: #e935d1;
+}
+
+#year_row li {
+  list-style-type: none;
+  border: 1px solid #e935d1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+#year_row li:hover {
+  border: 1px solid #e935d1;
+  background-color: #e935d1;
 }
